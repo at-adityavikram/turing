@@ -5,7 +5,7 @@
         .crt h1 {
             overflow: hidden;
             white-space: nowrap;
-            margin: 0 auto;
+            margin: 40% auto;
             letter-spacing: .15em;
             color: green;
             animation: typing 0.3s steps(40, end);
@@ -13,20 +13,23 @@
             font-weight: lighter;
             font-size: 100;
             text-shadow: 0 0 15px #26a526;
+            height: 100%;
+            position: absolute;
+            left: 50px;
         }
-
+        
         .crt::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-        z-index: 2;
-        background-size: 100% 8px, 10px 100%;
-        pointer-events: none;
+          content: " ";
+          width: 100%;
+          position: absolute;
+          top: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+          background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+          z-index: 2;
+          background-size: 100% 8px, 10px 100%;
+          pointer-events: none;
         }
 
         @keyframes flicker {
@@ -94,20 +97,19 @@
         opacity: 0.24387;
         }
         }
-
         .crt::after {
             content: " ";
-            display: block;
             position: absolute;
             top: 0;
-            left: 0;
-            bottom: 0;
             right: 0;
+            left: 0;
+            height: 100%;
             background: rgba(18, 16, 16, 0.1);
             opacity: 0;
             z-index: 2;
             pointer-events: none;
             animation: flicker 0.15s infinite;
+            vertical-align: middle;
         }
 
         @keyframes typing {
@@ -115,24 +117,44 @@
             to { width: 100% }
         }
         body{
-            background-color: black;
+            background-color: rgb(0, 0, 0);
+            padding: 0 0 0 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background-image: url("alan.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position-y:top;
+            background-position-x: right;
+            background-size: 60%;
         }
-        crt-wrapper{
-            margin: 0 auto;
+        body::-webkit-scrollbar {
+          width: 12px;
+        }
+        body::-webkit-scrollbar-track {
+          background: rgb(0, 0, 0);
+        }
+        body::-webkit-scrollbar-thumb {
+          background-color:  rgb(71, 71, 71);
+          border: 1px solid rgb(0, 0, 0);
+          box-shadow: inset -7px -7px 0px -5px #ABABAB;
+          -webkit-box-shadow: inset -7px -7px 0px -5px #ABABAB;
+          -moz-box-shadow: inset -7px -7px 0px -5px #ABABAB;
+          -o-box-shadow: inset -7px -7px 0px -5px #ABABAB;
         }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded',function(event){
-  var dataText = [ "I KR WFVD ZXVUCG", "F XM MKVI XVPSOI", "Y NE FIMQ VLIZTX", "J BV DRBB CVDIJL", "I AM ALAN TURING."];
+  var dataText = [ "I KR WFVD ZXVUCG", "F XM MKVI XVPSOI", "Q RF OEYJ MKOECD", "Z WB HOSY GWATMD", "W QV WMUZ TSNOPT", "F OR ITJC KBFLVF", "Y NE FIMQ VLIZTX", "J BV DRBB CVDIJL", "I AM ALAN TURING."];
   function typeWriter(text, i, fnCallback) {
     if (i < (text.length)) {
-     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+     document.querySelector("h1").innerHTML = text.substring(0, i+1);
       setTimeout(function() {
         typeWriter(text, i + 1, fnCallback)
-      }, 30);
+      }, 10);
     }
     else if (typeof fnCallback == 'function') {
-      setTimeout(fnCallback, 700);
+      setTimeout(fnCallback, 50);
     }
   }
    function StartTextAnimation(i) {
@@ -153,10 +175,9 @@
 </head>
 
 <body>
-    <div class="crt-wrapper">
-        <div class="crt">
-            <h1>I am Alan Turing.</h1>
-        </div>
+      <div class="crt">
+          <h1>I am Alan Turing.</h1>
+      </div>
     </div>
 </body>
 
