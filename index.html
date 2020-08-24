@@ -1,109 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Alan Turing</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="full-page-scroll.css"
-    />
-    <style type="text/css">
-      .section1 {
-        background-color: black;
-      }
 
-      .section2 {
-        background-color: #70706dbb;
-      }
+<head>
+  <title>Alan Turing</title>
+  <link rel="stylesheet" type="text/css" href="full-page-scroll.css" />
+  <style type="text/css">
+    .section1 {
+      background-color: black;
+    }
 
-      .section3 {
-        background-color: #403f4b;
-      }
+    .section2 {
+      background-color: #e5e8ec;
+    }
 
-      .section4 {
-        background-color: #242424;
-      }
+    .section3 {
+      background-color: #292c2e;
+      color: #f1f1f1;
+    }
 
-      .section5 {
-        background-color: #353535;
-      }
+    .section4 {
+      background-color: #242424;
+    }
 
-      section div {
-        height: 100%;
-        width: 100%;
-      }
+    .section5 {
+      background-color: #353535;
+    }
 
-    </style>
-  </head>
-  <body>
-    <div id="main" class="scroll-container">
+    section div {
+      height: 100%;
+      width: 100%;
+    }
 
-      <section class="section1">
-        <div>
-          <iframe src="cipher.html" width="100%" height="100%" scrolling="no" frameBorder= 0> hello</iframe> 
+    .neuo {
+      border-radius: 11px;
+      background: linear-gradient(145deg, #2c2f31, #252829);
+      box-shadow: 6px 6px 12px #1a1c1d,
+        -6px -6px 12px #383c3f;
+      height: fit-content;
+      width: 70%;
+      padding: 30px;
+      margin: 30px 30px 30px 50px;
+      font-size: large;
+      font-family: 'Consolas', monospace;
+    }
+    .neuo1 {
+      border-radius: 11px;
+      background: linear-gradient(145deg, #dce2e6, #b6b6b6);
+      box-shadow: 6px 6px 12px #1a1c1d,
+        -6px -6px 12px #383c3f;
+      height: fit-content;
+      width: 80%;
+      padding: 30px;
+      margin: 30px 30px 30px 50px;
+      font-size: large;
+      font-family: 'Consolas', monospace;
+      color: black;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #222222;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    li{
+      padding:20px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="main" class="scroll-container">
+
+    <section class="section1">
+      <div>
+        <iframe src="cipher.html" width="100%" height="100%" scrolling="no" frameBorder=0> hello</iframe>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div>
+        <div
+          style="float:left; width: 50%; background-color: rgb(99, 99, 99); background-image: url('a01.png'); background-position-x: left; box-shadow: inset -10px 0px 50px rgba(0,0,0,0.9);">
         </div>
-      </section>
+        <div style="float:right; width:50%; background: linear-gradient(145deg, #ffffff, #e6e6e6);">
+          <h1 style="font-weight: lighter; font-family:'Consolas', monospace; padding: 50px 50px 50px 50px;">
+            My name is <b>Alan Turing</b>, and I am a mathematician, cryptanalyst/cryptographer, and logician currently
+            situated in the UK.
+            With my interests spread over various disciplines and fields, I am highly passionate about subjects such as
+            mathematics, cryptanalysis, and logic. My other interests also include philosophy, as well as mathematical
+            biology - a field of my own creation.
+            <br><br>I’ve also worked on redefining the concepts pertaining to continuously evolving fields such as
+            computer science and artificial intelligence through the formalization of conventional algorithmic and
+            computational structures.
+            <br><br>Apart from my industrial skills and interests, I also thoroughly enjoy rowing, running (which I have
+            performed on a professional level), as well as reading classic novels and playing and devising new board
+            games.
+          </h1>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+    </section>
 
-      <section class="section2">
+    <section class="section3">
+      <div>
         <div>
-          <div style="float:left; width: 50%; background-color: rgb(99, 99, 99);">
-
+          <div style="float:left; width: 50%; overflow-y: auto;">
+            <h1
+              style="font-weight: lighter; font-family:'Consolas', monospace; padding: 50px 50px 0px 50px; font-size: xx-large;">
+              My Experience</h1>
+            <h1
+              style="font-weight: lighter; font-family:'Consolas', monospace; padding: 0px 50px 0px 50px; font-size: x-large;">
+              Education</h1>
+            <div class="neuo">
+              <b>King's College, Cambridge (1931-34)</b><br>
+              Graduated with a distinction in Mathematics (B.A.), and was conferred with the title of Fellow in 1935 in
+              recognition of my work.<br><br>
+            </div>
+            <div class="neuo">
+              <b>Princeton University, New Jersey (1937-38)</b><br>
+              Got the opportunity to travel to the States to study in Princeton, where I was later awarded a Ph.D. in
+              Mathematics.
+            </div>
+            <h1 style="font-weight: lighter; font-family:'Consolas', monospace; padding: 0px 50px 0px 50px; font-size: x-large;">Work</h1>
+              <div class="neuo1">
+                <b>Computer Scientist | Researcher National Physical Laboratory, Teddington (1946-47)</b><br>
+                I have worked as a scientist, researcher, and computer engineer at NPL, where I developed the schematics
+                and initial design of the ACE (Automatic Computing Engine).
+                During my time at NPL, I also published a paper with the first detailed design of a stored-program
+                computer.
+              </div>
           </div>
-          <div style="float:right; width:50%;">
-
+          <div style="float:right; background-color: rgb(99, 99, 99); width: 50%; background-image: url('a02.png'); background-position-x: left; box-shadow: inset 10px 0px 50px rgba(0,0,0,0.9);">
+            <div class="neuo1">
+              <b>Logician | Lead Cryptanalyst Government Codes and Ciphers School, Bletchley Park (1939-45)</b><br>
+              I have worked for the Government Code and Cypher School (GC&CS) at Bletchley Park, Britain's codebreaking
+              center. I devised various cryptographical and crypto-analytical
+              solutions and as such the machines and models for speeding the breaking of German ciphers, including a
+              machine that could find settings for the Enigma machine.
+              With GC&CS, I worked on various projects pertaining to the wartime communications and encryption systems,
+              some of them being - Bombe, the Hut8 project, Banburismus, Turingery, and Delilah.
+              My work is estimated to have shortened the war in Europe by more than two years and saved over 14 million
+              lives.
+            </div>            
+            <div class="neuo1">
+              <b>Reader | (Department of Mathematics) Victoria UoM@Manchester (1948-50)</b><br>
+              I was appointed as a Reader of the Mathematics Department at the Victoria University of Manchester.
+            </div>
+            <div class="neuo1">
+              <b>Computer Engineer | Computational Scientist Computing Machine Laboratory, Victoria UoM@Manchester (1948-51)</b><br>
+              At CML, I built the world's first electronic stored-program digital computer known as the Manchester Baby,
+              alongside founder Max Newman and co-engineers Frederic Calland Williams and Thomas Kilburn.
+              I was later promoted to the rank of Deputy Director of the research wing in 1949.
+            </div>
           </div>
         </div>
         <div style="clear:both"></div>
-      </section>
+    </section>
 
-      <section class="section3">
-        <div>
-          <div>
-            <div style="float:left; width: 50%;">
-  
-            </div>
-            <div style="float:right; background-color: rgb(99, 99, 99); width: 50%;">
+    <section class="section4">
+      <div>
+        <div style="float:left; width: 50%; background-color: rgb(99, 99, 99); background-position-x: right; box-shadow: inset 10px 0px 50px rgba(0,0,0,0.9); background-image: url('a03.png'); background-size: 200%">
 
-            </div>
         </div>
-        <div style="clear:both"></div>
-      </section>
-
-      <section class="section4">
-        <div>
-          <div style="float:left; width: 50%; background-color: rgb(99, 99, 99);">
-
-          </div>
-          <div style="float:right; width:50%;">
-
+        <div style="float:right; width:50%; color: white;">
+          <h1 style="font-weight: lighter; font-family:'Consolas', monospace; padding: 50px 50px 0px 50px; font-size: x-large;">My Skills</h1>
+          <div class="neuo1" style="width: 70%;">
+          <ol style="font-size: large; font-family: 'consolas', monospace; list-style-type: none;">
+            <li>Mathematical Proficiency
+            <li>Statistical and Computational Sciences
+            <li>Observational and Experimental Research
+            <li>Cryptography and Cryptanalysis
+            <li>Computer Engineering
+            <li>Philanthropy
+          </ol>
           </div>
         </div>
-        <div style="clear:both"></div>
-      </section>
+        <img src="papertape.png" style="position: relative; bottom: 200px; left: 63%; border-radius: 5px;" />
+      </div>
+      <div style="clear:both"></div>
+    </section>
+  </div>
+  <script src="full-page-scroll.js"></script>
+  <script type="text/javascript">
+    new fullScroll({
+      mainElement: "main",
+      displayDots: true,
+      dotsPosition: "right",
+      animateTime: 0.2,
+      animateFunction: "ease",
+    });
+  </script>
+</body>
 
-      <section class="section5">
-        <div>
-          <div>
-            <div style="float:left; width: 50%;">
-  
-            </div>
-            <div style="float:right; background-color: rgb(99, 99, 99); width: 50%;">
-
-            </div>
-        </div>
-        <div style="clear:both"></div>
-      </section>
-
-    </div>
-    <script src="full-page-scroll.js"></script>
-    <script type="text/javascript">
-      new fullScroll({
-        mainElement: "main",
-        displayDots: true,
-        dotsPosition: "right",
-        animateTime: 0.2,
-        animateFunction: "ease",
-      });
-    </script>
-  </body>
 </html>
