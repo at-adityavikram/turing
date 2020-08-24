@@ -3,6 +3,7 @@
 
 <head>
   <title>Alan Turing</title>
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
   <link rel="stylesheet" type="text/css" href="full-page-scroll.css" />
   <style type="text/css">
     .section1 {
@@ -41,7 +42,7 @@
       padding: 30px;
       margin: 30px 30px 30px 50px;
       font-size: large;
-      font-family: 'Consolas', monospace;
+      font-family: 'hack', monospace;
     }
     .neuo1 {
       border-radius: 11px;
@@ -53,7 +54,7 @@
       padding: 30px;
       margin: 30px 30px 30px 50px;
       font-size: large;
-      font-family: 'Consolas', monospace;
+      font-family: 'hack', monospace;
       color: black;
     }
     ::-webkit-scrollbar {
@@ -76,7 +77,13 @@
     li{
       padding:20px;
     }
-    
+    .ggif{
+          position: absolute;
+          z-index: 1;
+          top: -20;
+          left: -20;
+          opacity: 0.2;
+        }
   </style>
 </head>
 
@@ -85,17 +92,34 @@
 
     <section class="section1">
       <div>
+        <img class="ggif" src="crc.gif"  width=100% height=100% />
         <iframe src="cipher.html" width="100%" height="100%" scrolling="no" frameBorder=0> hello</iframe>
       </div>
     </section>
 
     <section class="section2">
       <div>
-        <div
-          style="float:left; width: 50%; background-color: rgb(99, 99, 99); background-image: url('a01.png'); background-position-x: left; box-shadow: inset -10px 0px 50px rgba(0,0,0,0.9);">
+        <div style="float:left; width: 50%; color: rgb(230, 230, 230); background-image: url('a01.png'); background-position-x: left; box-shadow: inset -10px 0px 50px rgba(0,0,0,0.9); display: flex; align-items: center;">
+         
+          <div style="size: fit-contents; position: relative; bottom: 0px; top: 50%">
+            <h1 style="font-weight: lighter; font-family:'hack', monospace; padding: 0px 50px 0px 50px; font-size: x-large;">Education</h1>
+            <div class="neuo">
+              <b>King's College, Cambridge (1931-34)</b><br>
+              Graduated with a distinction in Mathematics (B.A.), and was conferred with the title of Fellow in 1935 in
+              recognition of my work.<br><br>
+            </div>
+            <div class="neuo">
+              <b>Princeton University, New Jersey (1937-38)</b><br>
+              Got the opportunity to travel to the States to study in Princeton, where I was later awarded a Ph.D. in
+              Mathematics.
+            </div>
+          </div>
+
         </div>
-        <div style="float:right; width:50%; background: linear-gradient(145deg, #ffffff, #e6e6e6);">
-          <h1 style="font-weight: lighter; font-family:'Consolas', monospace; padding: 50px 50px 50px 50px;">
+        
+        <div style="float:right; width:50%; background: linear-gradient(145deg, #ffffff, #e6e6e6); display: flex; align-items: center;">
+          <h1 style="font-weight: lighter; font-family:'hack', monospace; padding: 50px 50px 50px 50px; font-size: x-large;">About Me</h1>
+          <h1 style="font-weight: lighter; font-family:'hack', monospace; padding: 50px 50px 50px 50px;">
             My name is <b>Alan Turing</b>, and I am a mathematician, cryptanalyst/cryptographer, and logician currently
             situated in the UK.
             With my interests spread over various disciplines and fields, I am highly passionate about subjects such as
@@ -118,22 +142,9 @@
         <div>
           <div style="float:left; width: 50%; overflow-y: auto;">
             <h1
-              style="font-weight: lighter; font-family:'Consolas', monospace; padding: 50px 50px 0px 50px; font-size: xx-large;">
+              style="font-weight: lighter; font-family:'hack', monospace; padding: 50px 50px 0px 50px; font-size: xx-large;">
               My Experience</h1>
-            <h1
-              style="font-weight: lighter; font-family:'Consolas', monospace; padding: 0px 50px 0px 50px; font-size: x-large;">
-              Education</h1>
-            <div class="neuo">
-              <b>King's College, Cambridge (1931-34)</b><br>
-              Graduated with a distinction in Mathematics (B.A.), and was conferred with the title of Fellow in 1935 in
-              recognition of my work.<br><br>
-            </div>
-            <div class="neuo">
-              <b>Princeton University, New Jersey (1937-38)</b><br>
-              Got the opportunity to travel to the States to study in Princeton, where I was later awarded a Ph.D. in
-              Mathematics.
-            </div>
-            <h1 style="font-weight: lighter; font-family:'Consolas', monospace; padding: 0px 50px 0px 50px; font-size: x-large;">Work</h1>
+            <h1 style="font-weight: lighter; font-family:'hack', monospace; padding: 0px 50px 0px 50px; font-size: x-large;">Work</h1>
               <div class="neuo1">
                 <b>Computer Scientist | Researcher National Physical Laboratory, Teddington (1946-47)</b><br>
                 I have worked as a scientist, researcher, and computer engineer at NPL, where I developed the schematics
@@ -175,9 +186,9 @@
 
         </div>
         <div style="float:right; width:50%; color: white;">
-          <h1 style="font-weight: lighter; font-family:'Consolas', monospace; padding: 50px 50px 0px 50px; font-size: x-large;">My Skills</h1>
+          <h1 style="font-weight: lighter; font-family:'hack', monospace; padding: 50px 50px 0px 50px; font-size: x-large;">My Skills</h1>
           <div class="neuo1" style="width: 70%;">
-          <ol style="font-size: large; font-family: 'consolas', monospace; list-style-type: none;">
+          <ol style="font-size: large; font-family: 'hack', monospace; list-style-type: none;">
             <li>Mathematical Proficiency
             <li>Statistical and Computational Sciences
             <li>Observational and Experimental Research
